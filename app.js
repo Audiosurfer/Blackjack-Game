@@ -11,6 +11,7 @@ $(document).ready(function() {
      var bustCheck = function() {
          if (totalAmount > 21) {
             $('#draw').hide();
+            $('#results').show();
             $('#results').text('You busted!');
         }
      }
