@@ -1,0 +1,63 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 1em 1em 1em 0em;
+    font-size: 22px;
+}
+
+
+#directions {
+    float: left;
+}
+#newgame {
+    float: right;
+}
+
+div { 
+    clear: both;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 65px;
+    margin: 0px;
+}
+
+#scoresect {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.score p {
+    font-size: 30px;
+}
+
+.score {
+    width: 200px;
+    height: 74px;
+    display: inline-block;
+}
+
+#draw {
+    width: 400px;
+    display: inline-block;
+}
+
+#draw ul li, #newgame {
+    cursor: pointer;
+}
+
+#draw ul li:hover {
+    text-decoration: underline;
+}
+
+#draw p, #results {
+    font-size: 24px;
+}

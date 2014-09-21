@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="normalize.css"/>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <title>Blackjack Game</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li id="newgame">New Game</li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <h1>Blackjack App</h1>
+            <div id="scoresect">
+                <div class="score">
+                    <h2>Your Score:</h2>
+                    <p id ="userscore">0</p>
+                </div>
+                <div class="score">
+                    <h2>Computer Score:</h2>
+                    <p id="compscore">?</p>
+                </div>
+            </div>
+            <div id="draw">
+                <p>Draw again?</p>
+                <ul>
+                    <li id="yes">Yes</li>
+                    <li id="no">No</li>
+                </ul>
+            </div>
+            <p id="results"></p>
+        </div>
+    </body>
+</html>
