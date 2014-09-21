@@ -52,16 +52,23 @@ h1 {
 
 #draw ul li {
     font-size: 20px;
+    display: inline-block;
+    padding-right: 10px;
 }
 
-#draw ul li, #newgame {
+
+#yes, #no {
     cursor: pointer;
 }
 
-#draw ul li:hover {
-    text-decoration: underline;
+span, #results {
+    font-size: 24px;
 }
 
-#draw p, #results {
-    font-size: 24px;
+#yes, #no, #newgame {
+    cursor: pointer;
+}
+
+#yes:hover, #no:hover {
+    text-decoration: underline;
 }
