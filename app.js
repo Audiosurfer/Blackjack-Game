@@ -8,12 +8,16 @@ $(document).ready(function() {
         }
     };
     
+     var bustCheck = function() {
+         if (totalAmount > 21) {
+            $('#draw').hide();
+            $('#results').text('You busted!');
+        }
+     }
+    
     var compareScore = function() {
         if (totalAmount === 21) {
             $('#results').text("Blackjack! You win!");
-        }
-        else if (totalAmount > 21) {
-            $('#results').text('You busted!');
         }
         else if (totalAmount > compAmount) {
             $('#results').text("Congrats! You win!");
@@ -39,6 +43,7 @@ $(document).ready(function() {
         var drawAmount = Math.ceil(Math.random() * 11)
         totalAmount += drawAmount;
         $('#userscore').text(totalAmount);
+        bustCheck();
     })
     
     $('#no').click(function() {
