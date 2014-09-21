@@ -50,6 +50,10 @@ h1 {
     display: inline-block;
 }
 
+#draw ul li {
+    font-size: 20px;
+}
+
 #draw ul li, #newgame {
     cursor: pointer;
 }
