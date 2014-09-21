@@ -65,10 +65,17 @@ span, #results {
     font-size: 24px;
 }
 
-#yes, #no, #newgame {
+#yes, #no, #newgame, #directions {
     cursor: pointer;
 }
 
 #yes:hover, #no:hover {
     text-decoration: underline;
+}
+
+#direct {
+    border: 1px solid black;
+    width: 700px;
+    margin: auto;
+    font-size: 18px;
 }

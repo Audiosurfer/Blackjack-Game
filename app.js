@@ -15,12 +15,17 @@ $(document).ready(function() {
             $('#results').text('You busted!');
         }
      }
-    
-    var compareScore = function() {
-        if (totalAmount === 21) {
+     
+     var blackjackCheck = function() {
+         if (totalAmount === 21) {
+            $('#draw').hide();
+            $('#results').show();
             $('#results').text("Blackjack! You win!");
         }
-        else if (totalAmount > compAmount) {
+     }
+    
+    var compareScore = function() {
+        if (totalAmount > compAmount) {
             $('#results').text("Congrats! You win!");
         }
         else if (totalAmount < compAmount) {
@@ -33,6 +38,7 @@ $(document).ready(function() {
     
     var restart = function() {
         $('#draw').show();
+        $('#direct').hide();
         $('#results').hide();
         $('#userscore').text(0);
         $('#compscore').text("?");
@@ -45,6 +51,7 @@ $(document).ready(function() {
         totalAmount += drawAmount;
         $('#userscore').text(totalAmount);
         bustCheck();
+        blackjackCheck();
     })
     
     $('#no').click(function() {
@@ -55,7 +62,12 @@ $(document).ready(function() {
         compareScore();
     })
     
+     $('#directions').click(function() {
+        $('#direct').toggle("slow");
+    })
+    
     $('#newgame').click(function() {
         restart();
     })
+    restart();
 });
